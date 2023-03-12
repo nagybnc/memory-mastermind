@@ -14,3 +14,11 @@ export interface Animal {
   width: number;
   height: number;
 }
+
+export interface CardInterface {
+  onClick: (index: number) => void;
+  card: Animal;
+  index: number;
+  isInactive: boolean;
+  isFlipped: boolean;
+}

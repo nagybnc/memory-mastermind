@@ -23,8 +23,6 @@ export default function Game({ params }: { params: { slug: string[] } }) {
     `http://localhost:3000/api/${animal}?limit=${deckSize}`
   );
 
-  console.log(animalCards);
-
   if (isLoading) {
     return <div className="animate-pulse text-center text-2xl">Loading...</div>;
   }
