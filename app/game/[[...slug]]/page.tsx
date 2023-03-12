@@ -20,7 +20,7 @@ export default function Game({ params }: { params: { slug: string[] } }) {
     error,
     isLoading,
   } = useFetch<Animal[]>(
-    `http://localhost:3000/api/${animal}?limit=${deckSize}`
+    `${window.location.origin}/api/${animal}?limit=${deckSize}`
   );
 
   if (isLoading) {
